@@ -11,7 +11,7 @@ function extractDataFromRow(row: Cheerio<AnyNode>): TeamData {
 }
 
 export default async function Home() {
-  const GAME_COUNT = 34
+  const GAME_COUNT = 38
   const res = await fetch("https://www.jleague.jp/standings/j1/", {
     next: {
       revalidate: 60
